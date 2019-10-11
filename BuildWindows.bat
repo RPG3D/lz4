@@ -1,6 +1,6 @@
 
-xmake  f -p windows   LZ4
-xmake -b LZ4
+xmake  f -p windows
+xmake -b
 
 pause
 
