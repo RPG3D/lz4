@@ -14,5 +14,3 @@ target("LZ4")
 	if (is_os("android")) then
 		set_kind("shared")
 	end
-	
-	
