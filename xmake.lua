@@ -11,6 +11,7 @@ target("LZ4")
 		add_defines("LZ4_DLL_EXPORT=1")
 	end
 	
+	
 	if (is_os("android")) then
 		set_kind("shared")
 	end
