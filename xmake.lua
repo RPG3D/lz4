@@ -15,3 +15,7 @@ target("LZ4")
 	if (is_os("android")) then
 		set_kind("shared")
 	end
+	
+	if (id_os('iphoneos')) then
+		add_cxflags("-fembed-bitcode")
+	end
