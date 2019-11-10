@@ -22,7 +22,7 @@ jobs:
       run: ./BuildWindows.bat
       
     - name: BuildAndroid
-      run: BuildAndroid.bat
+      run: ./BuildAndroid.bat
       
       
     - name: CommitBinaries
