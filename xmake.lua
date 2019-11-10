@@ -20,3 +20,5 @@ target("LZ4")
 		add_cxflags("-fembed-bitcode")
 	end
 	
+	
+	

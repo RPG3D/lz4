@@ -11,12 +11,8 @@ jobs:
     runs-on: windows-latest
     
     steps:
-    
-    - name: LogAllEnv
-      run: set
       
     - uses: actions/checkout@v1
-    
 
     - uses: xmake-io/github-action-setup-xmake@v1
       with:
