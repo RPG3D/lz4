@@ -19,3 +19,4 @@ target("LZ4")
 	if (is_os('ios')) then
 		add_cxflags("-fembed-bitcode")
 	end
+	
