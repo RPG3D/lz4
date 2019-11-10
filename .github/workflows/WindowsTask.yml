@@ -19,7 +19,7 @@ jobs:
         xmake-version: '2.2.8'
     
     - name: BuildWindows
-      run: BuildWindows.bat
+      run: ./BuildWindows.bat
       
     - name: BuildAndroid
       run: BuildAndroid.bat
