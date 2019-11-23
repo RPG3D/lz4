@@ -14,6 +14,9 @@
 *.sdf
 *.VC.db
 *.VC.opendb
+*.ilk
+*.pdb
+*.exp
 
 
 /VCBuild
@@ -23,3 +26,4 @@
 
 /.xmake
 /build/.*
+/vsxmake2019/
