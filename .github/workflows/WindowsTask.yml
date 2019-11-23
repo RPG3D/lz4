@@ -11,22 +11,18 @@ jobs:
     runs-on: windows-latest
     
     steps:
-    
-    - name: LogAllEnv
-      run: set
       
     - uses: actions/checkout@v1
-    
 
     - uses: xmake-io/github-action-setup-xmake@v1
       with:
         xmake-version: '2.2.8'
     
     - name: BuildWindows
-      run: BuildWindows.bat
+      run: ./BuildWindows.bat
       
     - name: BuildAndroid
-      run: BuildAndroid.bat
+      run: ./BuildAndroid.bat
       
       
     - name: CommitBinaries
@@ -35,6 +31,8 @@ jobs:
       run: |
         git config user.email "imxqliu@live.com"
         git config user.name "%GITHUB_ACTOR%"
+        git config --global core.autocrlf false
+        
         git checkout master
         git pull origin master
         git add build/windows/*
